@@ -7,10 +7,10 @@ on:
 
 jobs:
   sync:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Sync LeetCode Submissions
-        uses: joshcai/leetcode-sync@v1.8.0
+        uses: joshcai/leetcode-sync@v1.7.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           leetcode-session: ${{ secrets.LEETCODE_SESSION }}
